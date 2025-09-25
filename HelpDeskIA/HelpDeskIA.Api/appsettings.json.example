@@ -1,0 +1,27 @@
+{
+  "ConnectionStrings": {
+    "Default": "Server=localhost;Database=HelpDeskIA;User Id=sa;Password=YourStrong!Pass;"
+  },
+  "OpenAI": {
+    "ApiKey": "YOUR_OPENAI_API_KEY_HERE"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Jwt": {
+    "Key": "YOUR_VERY_STRONG_JWT_SECRET_CHANGE_ME",
+    "Issuer": "HelpDeskIA",
+    "Audience": "HelpDeskIAUsers",
+    "ExpireMinutes": 120
+  },
+  "RabbitMQ": {
+    "Host": "localhost",
+    "Username": "guest",
+    "Password": "guest",
+    "QueueName": "helpdesk-jobs"
+  }
+}
